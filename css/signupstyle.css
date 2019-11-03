@@ -1,0 +1,221 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #e3e7ed;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10% auto;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.container .row {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.container .row .left-outer {
+  padding: 50px 0;
+}
+
+.container .row .left-outer .clouds {
+  background: url(../img/login-clouds-vector.png);
+  height: 160px;
+  z-index: 0;
+  background-size: contain;
+}
+
+.container .row .left-outer .property {
+  width: 100%;
+}
+
+.container .row .left-outer .property img {
+  width: 100%;
+  z-index: 1;
+}
+
+.container .row .right-outer .sign-up-btn {
+  height: 35px;
+  font-size: 15px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100px;
+  color: #3e4e57;
+  background-color: transparent;
+  border-color: #3e4e57;
+  padding: 6px 30px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #3e4e57;
+}
+
+.container .row .right-outer .sign-up-btn:hover {
+  color: #fff;
+  background-color: #3e4e57;
+  border-color: #3e4e57;
+}
+
+.container .row .right-outer .login-form {
+  padding: 0px 40px;
+  text-align: center;
+}
+
+.container .row .right-outer .login-form .heading-lg {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.container .row .right-outer .login-form .btn {
+  color: white;
+}
+
+.container .row .right-outer .login-form .btn-teal {
+  background-color: #29cc9e;
+  height: 52px;
+  padding: 6px 30px;
+  font-size: 15px;
+  border-radius: 100px;
+}
+
+.container .row .right-outer .login-form .btn-blue {
+  background-color: #3980e5;
+  height: 52px;
+  padding: 6px 30px;
+  font-size: 15px;
+  border-radius: 100px;
+}
+
+.container .row .right-outer .login-form .form-group {
+  position: relative;
+}
+
+.container .row .right-outer .login-form .form-group input {
+  border: 0;
+  height: 52px;
+  padding-left: 55px;
+  border-radius: 100px;
+  background-color: #e6eef9;
+}
+
+.container .row .right-outer .login-form .form-group i.ls-icon-envelope {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  height: 52px;
+}
+
+.container .row .right-outer .login-form .form-group i.ls-icon-envelope::after {
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: url(../img/envelop-icon.png);
+  width: 20px;
+  height: 20px;
+}
+
+.container .row .right-outer .login-form .form-group i.ls-icon-lock {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  height: 52px;
+}
+
+.container .row .right-outer .login-form .form-group i.ls-icon-lock::after {
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: url(../img/lock-icon.png);
+  width: 20px;
+  height: 20px;
+}
+
+.container .row .right-outer .login-form .has-feedback {
+  position: relative;
+}
+
+.container .row .right-outer .login-form .has-feedback .icheck-warning {
+  min-height: 22px;
+  margin-top: 6px !important;
+  margin-bottom: 6px !important;
+  padding-left: 0px;
+  position: relative;
+  display: block;
+}
+
+.container .row .right-outer .login-form .has-feedback .icheck-warning input {
+  position: absolute !important;
+  opacity: 0;
+  margin: 0;
+}
+
+.container .row .right-outer .login-form .has-feedback .icheck-warning label {
+  padding-left: 29px !important;
+  min-height: 22px;
+  line-height: 22px;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.container .row .right-outer .login-form .has-feedback .icheck-warning label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #d3cfc8;
+  border-radius: 0px;
+  margin-left: -29px;
+  border-radius: 100% !important;
+}
+
+.container .row .right-outer .login-form .has-feedback .icheck-warning label::before a {
+  color: #3980e5;
+}
+
+.container .row .right-outer .login-form .contact-us-link {
+  color: #80848c;
+  text-decoration: underline;
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .left-outer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .left-outer {
+    display: none;
+  }
+}
+/*# sourceMappingURL=signupstyle.css.map */
