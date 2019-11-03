@@ -28,7 +28,7 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6 col-12">
+			<div class="col-lg-5 col-12">
 				<div class="left-outer">
 					<div class="clouds">
 					</div>
@@ -37,7 +37,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-6 col-12">
+			<div class="col-lg-7 col-12">
 				<div class="right-outer">
 
 
@@ -59,21 +59,34 @@
 							<form action="" method="post"><input
 									name="__RequestVerificationToken" type="hidden"
 									value="">
-								<div id="socialLoginList" class="row">
-									<div class="col-md-12 col-xl-6">
-										<button type="button" class="btn btn-teal btn-block roundcorner-100 mb-4"
-											id="Google" title="Log in using your Google account">
-											Sign in with <img src="img/google-icon.png" alt="">
-										</button>
-									</div>
-									<div class="col-md-12 col-xl-6">
-										<button onclick="register.submitExternalRegister(&quot;Facebook&quot;, true)"
-											type="button" class="btn btn-blue btn-block roundcorner-100 mb-4"
-											id="Facebook" title="Log in using your Facebook account">
-											Sign in with <img src="img/facebook-icon.png" alt="">
-										</button>
-									</div>
-								</div>
+									<div id="socialLoginList" class="row">
+
+
+
+											<div class="col-md-12 col-xl-4">
+												<button type="button" class="btn btn-google btn-block roundcorner-100 mb-4"
+													id="Google" title="Log in using your Google account">
+													Sign in with <i class="fab fa-google"></i>
+												</button>
+											</div>
+											<div class="col-md-12 col-xl-4">
+												<button onclick="register.submitExternalRegister(&quot;Facebook&quot;, true)"
+													type="button" class="btn btn-facebook btn-block roundcorner-100 mb-4"
+													id="Facebook" title="Log in using your Facebook account">
+													Sign in with <i class="fab fa-facebook-f"></i>
+												</button>
+											</div>
+											<div class="col-md-12 col-xl-4">
+												<button onclick="register.submitExternalRegister(&quot;Facebook&quot;, true)"
+													type="button" class="btn btn-twitter btn-block roundcorner-100 mb-4"
+													id="Facebook" title="Log in using your Facebook account">
+													Sign in with <i class="fab fa-twitter"></i>
+												</button>
+											</div>
+		
+		
+		
+										</div>
 								<input type="hidden" id="provider" name="provider" value="">
 								<input type="hidden" class="input-small referrer" id="referrer" name="referrer">
 							</form>

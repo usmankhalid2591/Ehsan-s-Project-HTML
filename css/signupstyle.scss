@@ -65,15 +65,22 @@ body {
         .btn {
           color: white;
         }
-        .btn-teal {
-          background-color: #29cc9e;
+        .btn-google {
+          background-color: #dd4b39;
           height: 52px;
           padding: 6px 30px;
           font-size: 15px;
           border-radius: 100px;
         }
-        .btn-blue {
-          background-color: #3980e5;
+        .btn-facebook {
+          background-color: #3b5998;
+          height: 52px;
+          padding: 6px 30px;
+          font-size: 15px;
+          border-radius: 100px;
+        }
+        .btn-twitter {
+          background-color: #55acee;
           height: 52px;
           padding: 6px 30px;
           font-size: 15px;
@@ -166,12 +173,12 @@ body {
             }
           }
         }
-        .contact-us-link{
-            color: #80848c;
-            text-decoration: underline;
-            position: absolute;
-            right: 20px;
-            bottom: 0;
+        .contact-us-link {
+          color: #80848c;
+          text-decoration: underline;
+          position: absolute;
+          right: 20px;
+          bottom: 0;
         }
       }
     }
