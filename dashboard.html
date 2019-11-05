@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html style="" class="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Organization Dashboard - HOR.NG</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link href="css/css.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9c7309bfe2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/ionicons.css">
+    <link href="css/css_004.css" rel="stylesheet" type="text/css">
+    <link href="css/css_003.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/css_002.css">
+    <link href="css/skin-landlord-studio.css" rel="stylesheet">
+    <link href="css/bootstrap-datepicker3.css" rel="stylesheet">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jqueryval.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/analytics_002.js"></script>
+    <script src="js/validators.js"></script>
+    <script src="js/cldr.js"></script>
+    <script src="js/event.js"></script>
+    <script src="js/supplemental.js"></script>
+    <script src="js/globalize.js"></script>
+    <script src="js/number.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-datepicker_003.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/bootstrap-datepicker_002.js"></script>
+    <script src="js/ai.js"></script>
+</head>
+
+<body class="sidebar-mini">
+    <div class="wrapper">
+        <!-- Main Header -->
+        <header class="main-header">
+            <!-- Logo -->
+            <span href="#" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini">H<b></b>G</span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><b>HOR</b>NG</span>
+            </span>
+            <!-- Header Navbar -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <!-- Nav Centre Logo -->
+                <!-- Logo -->
+                <span href="#" class="logo-mobile">
+                    <!-- logo for regular state and mobile devices -->
+                    <span class="logo-lg"><b>Landlord</b>Studio</span>
+                </span>
+
+                <!-- Navbar Right Menu -->
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+
+                        <!-- User Account Menu -->
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <!-- The user image in the navbar-->
+                                <img src="img/landlord-studio-icon-200.png" class="user-image" alt="User Image">
+                                <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                                <span class="hidden-xs">usmankhalid2591@gmail.com</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="user-header">
+                                    <img src="img/landlord-studio-icon-200.png" style="border:none" alt="User Image">
+                                    <p>
+                                        usmankhalid2591@gmail.com
+                                    </p>
+                                </li>
+                                <li class="user-footer">
+                                    <div class="pull-left">
+                                        <a class="btn btn-default btn-flat" href="javascript:void(0);"
+                                            title="Profile">My
+                                            Account</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <form action="/Account/LogOff" class="" id="logoutForm" method="post"><input
+                                                name="" type="hidden" value="">
+                                            <a href="javascript:void(0);" class="btn btn-default btn-flat">Log off</a>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <!-- Sidebar Menu -->
+                <ul class="sidebar-menu">
+                    <!-- Optionally, you can add icons to the links -->
+                    <li class="active">
+                        <a href="javascript:void(0);">
+                            <img src="img/Dashboard.png" class="menuImage"><span class="menuText">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="inactive"><a href="javascript:void(0);"><img src="img/organisation.png"
+                                class="menuImage"><span class="menuText">Organization</span></a></li>
+                    <li class="inactive"><a href="javascript:void(0);"><img src="img/Properties.png"
+                                class="menuImage"><span class="menuText">Properties</span></a></li>
+                    <li class="inactive"><a href="javascript:void(0);"><img src="img/Reports.png"
+                                class="menuImage"><span class="menuText">Reports</span></a></li>
+
+
+
+
+                    <li class="li-seperator">
+                    </li>
+
+                    <li class="inactive">
+                        <a href="javascript:void(0);">
+                            <img src="img/Tenants1.png" class="menuImage">
+                            <span class="menuText">Tenants</span>
+                        </a>
+                    </li>
+
+                    <li class="inactive"><a href="javascript:void(0);"><img src="img/owner.png" class="menuImage"><span
+                                class="menuText">Owners</span></a></li>
+                    <li class="inactive"><a href="javascript:void(0);"><img src="img/suppliers.png"
+                                class="menuImage"><span class="menuText">Suppliers</span></a></li>
+
+                    <li class="li-seperator">
+                    </li>
+
+                    <li class="inactive"><a href="javascript:void(0);"><img src="img/settings.png" class="menuImage">
+                            <span class="menuText">Settings</span></a></li>
+                    <li class="inactive"><a href="javascript:void(0);" target="_blank"><img src="img/Help.png"
+                                class="menuImage">
+                            <span class="menuText">Help Center</span></a></li>
+                    <li class="inactive"><a href="javascript:void(0);"><img src="img/Email.png" class="menuImage"> <span
+                                class="menuText">Contact Us</span></a></li>
+
+
+                    <li class="inactive">
+                        <a href="javascript:void(0);">
+                            <img src="img/downloadicon.png" class="menuImage"> <span class="menuText">Download
+                                App</span>
+                        </a>
+                    </li>
+
+
+
+
+                </ul>
+            </section>
+        </aside>
+
+        <div class="content-wrapper" style="min-height: 761.15px;">
+            <section class="content-header">
+
+            </section>
+
+            <!-- Main content -->
+            <section id="mainContent" class="content">
+                <!-- Your Page Content Here -->
+
+
+
+
+
+                <div id="property-empty-state" style="display:none">
+                    <img src="img/AddHouse.png" class="img-house-empty-state">
+                    <div class="txt-add-property-empty-state">Track expenses, log rent, and</div>
+                    <div class="sub-txt-add-property-empty-state">manage tenants by adding your first property.</div>
+                    <div style="text-align: center;margin-top:40px;">
+                        <a href="javascript:void(0);">
+                            <div class="btn btn-blue btn-empty-state" id="dashboard-property-text">Add Property</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="dashboard" style="">
+                    <style>
+                        .dashbord-date-selection {
+                            width: 100%;
+                            border: none !important;
+                            border-color: transparent !important;
+                            text-align: center;
+                            max-width: 130px;
+                            color: #3980E5;
+                        }
+
+                        .dashbord-date-selection:focus {
+                            outline: none;
+                        }
+                    </style>
+
+                    <div class="box box-default collapsed-box" id="divFilter">
+                        <div class="box-header">
+                            <h3 class="dashboard-title">Filters</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+                            <!-- /.box-tools -->
+                        </div>
+                        <!-- /.box-header -->
+                        <!-- form start -->
+                        <form action="/Dashboard/Filter" class="form-horizontal" id="formFilter" method="post">
+                            <input name="__RequestVerificationToken" type="hidden">
+                            <div class="box-body" style="display: none;">
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label" for="PaymentCategories">Payment
+                                        Categories</label>
+                                    <div class="col-sm-10">
+                                        <div class="dropdown bootstrap-select show-tick form-control"><select
+                                                class="form-control" id="PaymentCategories" multiple="multiple"
+                                                name="PaymentCategories" data-actions-box="true" tabindex="-98">
+                                                <option selected="selected" value="Damages">Damages</option>
+                                                <option selected="selected" value="Deposit">Deposit</option>
+                                                <option selected="selected" value="LateFee">Late Fee</option>
+                                                <option selected="selected" value="Pro-Rata">Pro-Rata</option>
+                                                <option selected="selected" value="Rent">Rent</option>
+                                            </select><button type="button"
+                                                class="dropdown-toggle btn btn-default btn-bootstrap-select"
+                                                data-toggle="dropdown" role="button" data-id="PaymentCategories"
+                                                title="Damages, Deposit, Late Fee, Pro-Rata, Rent"
+                                                style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;"
+                                                aria-expanded="false">
+                                                <div class="filter-option">
+                                                    <div class="filter-option-inner">
+                                                        <div class="filter-option-inner-inner">Damages, Deposit, Late
+                                                            Fee, Pro-Rata, Rent</div>
+                                                    </div>
+                                                </div><span class="bs-caret"><span class="caret"></span></span>
+                                            </button>
+                                            <div class="dropdown-menu open" role="combobox"
+                                                style="border-color: rgb(210, 214, 222); overflow: hidden;">
+                                                <div class="bs-actionsbox">
+                                                    <div class="btn-group btn-group-sm btn-block"><button type="button"
+                                                            class="actions-btn bs-select-all btn btn-default btn-info">Select
+                                                            All</button><button type="button"
+                                                            class="actions-btn bs-deselect-all btn btn-default btn-info">Deselect
+                                                            All</button></div>
+                                                </div>
+                                                <div class="inner open" role="listbox" aria-expanded="false"
+                                                    tabindex="-1" style="overflow-y: auto;">
+                                                    <ul class="dropdown-menu inner ">
+                                                        <li class="selected"><a role="option" aria-disabled="false"
+                                                                tabindex="0" class="selected" aria-selected="true"><span
+                                                                    class="glyphicon glyphicon-ok check-mark"></span><span
+                                                                    class="text">Damages</span></a></li>
+                                                        <li class="selected"><a role="option" aria-disabled="false"
+                                                                tabindex="0" class="selected" aria-selected="true"><span
+                                                                    class="glyphicon glyphicon-ok check-mark"></span><span
+                                                                    class="text">Deposit</span></a></li>
+                                                        <li class="selected"><a role="option" aria-disabled="false"
+                                                                tabindex="0" class="selected" aria-selected="true"><span
+                                                                    class="glyphicon glyphicon-ok check-mark"></span><span
+                                                                    class="text">Late Fee</span></a></li>
+                                                        <li class="selected"><a role="option" aria-disabled="false"
+                                                                tabindex="0" class="selected" aria-selected="true"><span
+                                                                    class="glyphicon glyphicon-ok check-mark"></span><span
+                                                                    class="text">Pro-Rata</span></a></li>
+                                                        <li class="selected"><a role="option" aria-disabled="false"
+                                                                tabindex="0" class="selected" aria-selected="true"><span
+                                                                    class="glyphicon glyphicon-ok check-mark"></span><span
+                                                                    class="text">Rent</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label" for="ExpenseCategories">Expense
+                                        Categories</label>
+                                    <div class="col-sm-10">
+                                        <div class="dropdown bootstrap-select show-tick form-control"><select
+                                                class="form-control" id="ExpenseCategories" multiple="multiple"
+                                                name="ExpenseCategories" data-actions-box="true" tabindex="-98">
+                                                <option selected="selected" value="AccountantsFees">Accountant's Fees
+                                                </option>
+                                                <option selected="selected" value="Advertising">Advertising</option>
+                                                <option selected="selected" value="AgentFees">Agent Fees</option>
+                                                <option selected="selected" value="BankFees">Bank Fees</option>
+                                                <option selected="selected" value="CleaningFees">Cleaning Fees</option>
+                                                <option selected="selected" value="GroundRents">Ground Rents</option>
+                                                <option selected="selected" value="HOA">HOA</option>
+                                                <option selected="selected" value="Insurance">Insurance</option>
+                                                <option selected="selected" value="Interest">Interest</option>
+                                                <option selected="selected" value="LateFees">Late Fees</option>
+                                                <option selected="selected" value="LegalFees">Legal Fees</option>
+                                                <option selected="selected" value="MaintenanceAndRepairs">Maintenance
+                                                    and Repairs</option>
+                                                <option selected="selected" value="Mortgage">Mortgage</option>
+                                                <option selected="selected" value="Other">Other</option>
+                                                <option selected="selected" value="PropertyTax">Property Tax</option>
+                                                <option selected="selected" value="Rates">Rates</option>
+                                                <option selected="selected" value="RentArrears">Rent Arrears</option>
+                                                <option selected="selected" value="Utilities">Utilities</option>
+                                                <option selected="selected" value="Water">Water</option>
+                                            </select><button type="button"
+                                                class="dropdown-toggle btn btn-default btn-bootstrap-select"
+                                                data-toggle="dropdown" role="button" data-id="ExpenseCategories"
+                                                title="Accountant's Fees, Advertising, Agent Fees, Bank Fees, Cleaning Fees, Ground Rents, HOA, Insurance, Interest, Late Fees, Legal Fees, Maintenance and Repairs, Mortgage, Other, Property Tax, Rates, Rent Arrears, Utilities, Water"
+                                                style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;">
+                                                <div class="filter-option">
+                                                    <div class="filter-option-inner">
+                                                        <div class="filter-option-inner-inner">Accountant's Fees,
+                                                            Advertising, Agent Fees, Bank Fees, Cleaning Fees, Ground
+                                                            Rents, HOA, Insurance, Interest, Late Fees, Legal Fees,
+                                                            Maintenance and Repairs, Mortgage, Other, Property Tax,
+                                                            Rates, Rent Arrears, Utilities, Water</div>
+                                                    </div>
+                                                </div><span class="bs-caret"><span class="caret"></span></span>
+                                            </button>
+                                            <div class="dropdown-menu open" role="combobox"
+                                                style="border-color: rgb(210, 214, 222);">
+                                                <div class="bs-actionsbox">
+                                                    <div class="btn-group btn-group-sm btn-block"><button type="button"
+                                                            class="actions-btn bs-select-all btn btn-default btn-info">Select
+                                                            All</button><button type="button"
+                                                            class="actions-btn bs-deselect-all btn btn-default btn-info">Deselect
+                                                            All</button></div>
+                                                </div>
+                                                <div class="inner open" role="listbox" aria-expanded="false"
+                                                    tabindex="-1">
+                                                    <ul class="dropdown-menu inner "></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label" for="PropertiesAsCategories">Properties
+                                    </label>
+                                    <div class="col-sm-10">
+                                        <div class="dropdown bootstrap-select show-tick form-control"><select
+                                                class="form-control" id="FilterProperties" multiple="multiple"
+                                                name="FilterProperties" data-actions-box="true" tabindex="-98">
+                                                <option selected="selected" value="121414">abc</option>
+                                                <option selected="selected" value="-99">General Expenses</option>
+                                            </select><button type="button"
+                                                class="dropdown-toggle btn btn-default btn-bootstrap-select"
+                                                data-toggle="dropdown" role="button" data-id="FilterProperties"
+                                                title="abc, General Expenses"
+                                                style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;">
+                                                <div class="filter-option">
+                                                    <div class="filter-option-inner">
+                                                        <div class="filter-option-inner-inner">abc, General Expenses
+                                                        </div>
+                                                    </div>
+                                                </div><span class="bs-caret"><span class="caret"></span></span>
+                                            </button>
+                                            <div class="dropdown-menu open" role="combobox"
+                                                style="border-color: rgb(210, 214, 222);">
+                                                <div class="bs-actionsbox">
+                                                    <div class="btn-group btn-group-sm btn-block"><button type="button"
+                                                            class="actions-btn bs-select-all btn btn-default btn-info">Select
+                                                            All</button><button type="button"
+                                                            class="actions-btn bs-deselect-all btn btn-default btn-info">Deselect
+                                                            All</button></div>
+                                                </div>
+                                                <div class="inner open" role="listbox" aria-expanded="false"
+                                                    tabindex="-1">
+                                                    <ul class="dropdown-menu inner "></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-footer" style="display: none;">
+                                <button type="submit" class="btn btn-info pull-right">Filter</button>
+                            </div>
+                        </form>
+                    </div>
+
+
+                    <div class="row dashboard-box-row" style="margin-top:10px;">
+                        <div class="col-lg-3 col-xs-6 small-box-parent">
+                            <div class="small-box red-bottom">
+                                <img src="img/overdue_expenses.png" class="dashboard-box-images">
+                                <div class="inner" style="padding-bottom:5px;">
+                                    <div style="height:20px">&nbsp;</div>
+                                    <span class="dashboard-card-amount"><span
+                                            style="font-size:20px;">USD</span>0.00</span>
+                                    <div style="margin-top:5px; padding-bottom:15px;" class="dashboard-card-detail">
+                                        <span style="font-weight:bold">0</span><span> Overdue Expenses</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-xs-6 small-box-parent">
+                            <div class="small-box green-bottom">
+                                <img src="img/upcoming_expenses.png" class="dashboard-box-images">
+                                <div class="inner" style="padding-bottom:5px;">
+                                    <div style="height:20px">&nbsp;</div>
+                                    <span class="dashboard-card-amount"><span
+                                            style="font-size:20px;">USD</span>0.00</span>
+                                    <div style="margin-top:5px; padding-bottom:15px;" class="dashboard-card-detail">
+                                        <span style="font-weight:bold">0</span><span> Upcoming Expenses</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-xs-6 small-box-parent">
+                            <div class="small-box blue-bottom">
+                                <a href="javascript:void(0);" class="nohover">
+                                    <img src="img/upcoming_rent.png" class="dashboard-box-images">
+                                    <div class="inner" style="padding-bottom:5px;">
+                                        <div style="height:20px">&nbsp;</div>
+                                        <span class="dashboard-card-amount"><span
+                                                style="font-size:20px;">USD</span>0.00</span>
+                                        <div style="margin-top:5px; padding-bottom:15px;" class="dashboard-card-detail">
+                                            <span style="font-weight:bold">0</span><span> Upcoming Rent</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-xs-6 small-box-parent">
+                            <div class="small-box orange-bottom">
+                                <a href="javascript:void(0);" class="nohover">
+                                    <img src="img/overdue_rent.png" class="dashboard-box-images">
+                                    <div class="inner" style="padding-bottom:5px;">
+                                        <div style="height:20px">&nbsp;</div>
+                                        <span class="dashboard-card-amount"><span
+                                                style="font-size:20px;">USD</span>0.00</span>
+                                        <div style="margin-top:5px; padding-bottom:15px;" class="dashboard-card-detail">
+                                            <span style="font-weight:bold">0</span><span> Overdue Rent</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-md-4-custom" id="propertyBox">
+                            <div class="box pie-box">
+                                <div class="box-header">
+                                    <h3 class="dashboard-title">Add Property</h3>
+                                </div>
+                                <div class="box-body" style="padding:0px; vertical-align:middle">
+                                    <a href="javascript:void(0);">
+                                        <img src="img/AddHouse_002.png"
+                                            class="dashboard-property-image">
+                                        <div class="dashboard-property-text" id="dashboard-property-text">Add a new
+                                            property</div>
+                                    </a>
+                                </div>
+                                <div style="height:88px"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-md-4-custom" id="occupancyBox">
+                            <div class="box pie-box">
+                                <div class="box-header">
+                                    <h3 class="dashboard-title">Occupancy</h3>
+                                </div>
+                                <div style="margin-top:8px">
+                                    <span style="color:#FF9776; font-size:25px">0</span><span
+                                        style="color:#FF9776; font-size:15px"> tenanted</span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span style="color:#a6a6a6; font-size:25px">0</span><span
+                                        style="color:#a6a6a6; font-size:15px"> untenanted</span>
+                                </div>
+                                <div class="box-body" style="margin-top:12px">
+                                    <div class="row">
+                                        <div class="col-md-12" style="padding-left:0px;padding-right:0px;">
+                                            <div class="" style="">
+                                                <canvas id="pieChart" width="300" height="188" class="pie-chart"
+                                                    style="width: 300px; height: 188px;"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="height:19px"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-md-4-custom col-md-4-rentCollected" id="rentCollectedBox">
+                            <div class="box pie-box">
+                                <div class="box-header">
+                                    <h3 class="dashboard-title">Rent Collected</h3>
+                                </div>
+                                <div class="box-body" style="margin-top:-5px;padding-bottom:0px">
+
+
+
+                                    <div class="teal"
+                                        style="font-size:22px;margin-left:3px;text-align:left;float:left;"><span
+                                            style="font-size:12px;">USD</span>0.00</div>
+
+                                    <span style="float:right; font-size:14px;margin-right:3px; margin-top:10px;">Total
+                                        Due</span>
+
+                                    <div class="clearfix"></div>
+
+                                    <span style="float:left; font-size:14px;margin-left:3px">Outstanding</span>
+                                    <span style="float:left; font-size:14px;margin-left:3px">in October 2019</span>
+                                    <span style="float:right; font-size:14px;margin-right:3px"><span
+                                            style="font-size:12px;">USD</span>0.00</span>
+                                    <div class="clearfix"></div>
+
+                                    <div class="progress-group">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-teal " style="width: 0%"></div>
+                                        </div>
+                                    </div>
+                                    <div style="margin-top:-10px; text-align:left; padding-bottom:10px; font-weight:bold; opacity:0.9"
+                                        class="dark-text"><span style="font-size:12px;">USD</span>0.00 Collected</div>
+
+
+                                    <div class="rent-collected-seperator"></div>
+                                    <div class="blue"
+                                        style="font-size:22px;margin-left:3px;text-align:left;float:left;"><span
+                                            style="font-size:12px;">USD</span>0.00</div>
+
+                                    <span style="float:right; font-size:14px;margin-right:3px; margin-top:10px;">Total
+                                        Due</span>
+
+                                    <div class="clearfix"></div>
+
+                                    <span style="float:left; font-size:14px;margin-left:3px">Outstanding</span>
+                                    <span style="float:left; font-size:14px;margin-left:3px">in November 2019</span>
+                                    <span style="float:right; font-size:14px;margin-right:3px"><span
+                                            style="font-size:12px;">USD</span>0.00</span>
+                                    <div class="clearfix"></div>
+
+                                    <div class="progress-group">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-blue" style="width: 0%"></div>
+                                        </div>
+                                    </div>
+                                    <div style="margin-top:-10px; text-align:left; padding-bottom:10px; font-weight:bold; opacity:0.9"
+                                        class="dark-text"><span style="font-size:12px;">USD</span>0.00 Collected</div>
+
+                                    <div style="height:10px"></div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="cashFlowBox">
+                            <form action="/Dashboard/RefreshCashflow" class="" method="post"><input
+                                    name="__RequestVerificationToken" type="hidden"
+                                    value="7bTx8q7K-WY06DEAV3wom92P3b-VGbRLTQuVBNvf3AlVQ_fCc83tZpL3_KYxkC1BksrAy-L58cFSvTr6jS4vgqT9WZ-k9i4UGQ3ZIbuGXTVFVZnnRO3qMLyKHZ4h0mcRZ_AxaA2">
+                                <div class="box pie-box">
+                                    <div class="box-header">
+                                        <h3 class="dashboard-title">Cashflow</h3>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <div class="description-block">
+                                                            <div style="font-size:20px">
+                                                                <input id="StartDate" name="StartDate" type="text"
+                                                                    value="01 Jan 2019" class="dashbord-date-selection"
+                                                                    readonly="true">
+                                                                <input id="StartDateValue" name="StartDateValue"
+                                                                    type="hidden" value="01 January 2019">
+                                                                <input id="startDateImage" type="image"
+                                                                    src="img/caret_down.png"
+                                                                    style="width:15px; height:auto;">
+                                                            </div>
+                                                            <span style="font-size:14px">Start Date</span>
+
+                                                        </div>
+                                                        <!-- /.description-block -->
+                                                    </div>
+                                                    <div class="col-xs-6 ">
+                                                        <div class="description-block">
+                                                            <div style="font-size:20px">
+                                                                <input id="EndDate" name="EndDate" type="text"
+                                                                    value="17 Dec 2019"
+                                                                    class="dashbord-date-selection readonly" style=""
+                                                                    readonly="true">
+                                                                <input id="EndDateValue" name="EndDateValue"
+                                                                    type="hidden" value="17 December 2019">
+                                                                <input id="endDateImage" type="image"
+                                                                    src="img/caret_down.png"
+                                                                    style="width:15px; height:auto;">
+                                                            </div>
+                                                            <span style="font-size:14px">End Date</span>
+                                                        </div>
+                                                        <!-- /.description-block -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <div class="description-block">
+                                                            <div class="teal" style="font-size:20px">USD0.00</div>
+                                                            <span style="font-size:14px">Incoming</span>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-xs-6 border-right">
+                                                        <div class="description-block">
+                                                            <div class="red" style="font-size:20px">USD0.00</div>
+                                                            <span style="font-size:14px">Outgoing</span>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.row -->
+                                        <div class="chart">
+                                            <canvas id="barChart" style="height: 230px; width: 758px;" width="758"
+                                                height="230"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input id="id" name="id" type="hidden" value="71859">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modalDatePicker" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div id="divDatePicker"></div>
+                                <input type="hidden" id="sourceObject" value="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- END Modal -->
+
+
+            </section><!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+
+    </div><!-- ./wrapper -->
+    <!-- Modal Datepicker-->
+    <div class="modal fade" id="modalDatePicker" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="divDatePicker"></div>
+                    <input type="hidden" id="sourceObject" value="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- END Modal Datepicker-->
+    <!-- Modal GDRP-->
+    <div class="modal fade in" id="modal-privacy-policy" style="display: block; padding-right: 17px; display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title text-center">
+                        Protecting your data
+                    </h3>
+                </div>
+                <div class="modal-body text-center">
+                    <img class="no-padding" style="height:150px;"
+                        src="img/GDPR.png">
+                    <p>We've updated our privacy policy to comply with EU's General Data Protection Regulation (GDPR).
+                    </p>
+                    <p>Your privacy has always been our top priority and we have never, and will never share your email
+                        address with any other party.</p>
+                    <p>The updated privacy policy will provide you with
+                        even more transparency on what data we have, how it's used and how we
+                        keep your information safe. This privacy policy will take effect from
+                        May 25, 2018</p>
+                    <p>
+                        You can read the full text of the privacy policy
+                        <a href="javascript:void(0);" target="_blank">here</a>. Your continued
+                        use will be subject to it.
+                    </p>
+
+                    <button type="button" class="btn btn-primary center-block" style="width:150px;"
+                        onclick="AcceptPrivacyPolicy()">I Agree</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- END Modal GDPR-->
+
+
+    <script src="js/Chart.js"></script>
+    <!-- Include the plugin's CSS and JS: -->
+    <link href="css/bootstrap-select.css" rel="stylesheet">
+    <script src="js/bootstrap-select.js"></script>
+
+    <script async="" type="text/javascript" src="js/a.js"></script>
+    <style>
+        .helpcrunch-iframe-wrapper,
+        [name='helpcrunch-iframe'] {
+            animation: none;
+            animation-delay: 0;
+            animation-direction: normal;
+            animation-duration: 0;
+            animation-fill-mode: none;
+            animation-iteration-count: 1;
+            animation-name: none;
+            animation-play-state: running;
+            animation-timing-function: ease;
+            backface-visibility: visible;
+            background: 0;
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-color: transparent;
+            background-image: none;
+            background-origin: padding-box;
+            background-position: 0 0;
+            background-position-x: 0;
+            background-position-y: 0;
+            background-repeat: repeat;
+            background-size: auto auto;
+            border: 0;
+            border-style: none;
+            border-width: medium;
+            border-color: inherit;
+            border-bottom: 0;
+            border-bottom-color: inherit;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-style: none;
+            border-bottom-width: medium;
+            border-collapse: separate;
+            border-image: none;
+            border-left: 0;
+            border-left-color: inherit;
+            border-left-style: none;
+            border-left-width: medium;
+            border-radius: 0;
+            border-right: 0;
+            border-right-color: inherit;
+            border-right-style: none;
+            border-right-width: medium;
+            border-spacing: 0;
+            border-top: 0;
+            border-top-color: inherit;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-top-style: none;
+            border-top-width: medium;
+            bottom: auto;
+            box-shadow: none;
+            box-sizing: content-box;
+            caption-side: top;
+            clear: none;
+            clip: auto;
+            color: inherit;
+            columns: auto;
+            column-count: auto;
+            column-fill: balance;
+            column-gap: normal;
+            column-rule: medium none currentColor;
+            column-rule-color: currentColor;
+            column-rule-style: none;
+            column-rule-width: none;
+            column-span: 1;
+            column-width: auto;
+            content: normal;
+            counter-increment: none;
+            counter-reset: none;
+            cursor: auto;
+            direction: ltr;
+            display: inline;
+            empty-cells: show;
+            -ms-flex: none;
+            flex: none;
+            float: none;
+            font: normal;
+            font-family: inherit;
+            font-size: medium;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: normal;
+            height: auto;
+            -webkit-hyphens: none;
+            -ms-hyphens: none;
+            hyphens: none;
+            left: auto;
+            letter-spacing: normal;
+            line-height: normal;
+            list-style: none;
+            list-style-image: none;
+            list-style-position: outside;
+            list-style-type: disc;
+            margin: 0;
+            margin-bottom: 0;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 0;
+            max-height: none;
+            max-width: none;
+            min-height: 0;
+            min-width: 0;
+            opacity: 1;
+            orphans: 0;
+            outline: 0;
+            outline-color: invert;
+            outline-style: none;
+            outline-width: medium;
+            overflow: visible;
+            overflow-x: visible;
+            overflow-y: visible;
+            padding: 0;
+            padding-bottom: 0;
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 0;
+            page-break-after: auto;
+            page-break-before: auto;
+            page-break-inside: auto;
+            perspective: none;
+            perspective-origin: 50% 50%;
+            position: static;
+            quotes: none;
+            right: auto;
+            -moz-tab-size: 8;
+            tab-size: 8;
+            table-layout: auto;
+            text-align: inherit;
+            text-align-last: auto;
+            text-decoration: none;
+            -webkit-text-decoration-color: inherit;
+            text-decoration-color: inherit;
+            -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+            -webkit-text-decoration-style: solid;
+            text-decoration-style: solid;
+            text-indent: 0;
+            text-shadow: none;
+            text-transform: none;
+            top: auto;
+            -ms-transform: none;
+            transform: none;
+            transform-style: flat;
+            transition: none;
+            transition-delay: 0;
+            transition-duration: 0;
+            transition-property: none;
+            transition-timing-function: ease;
+            unicode-bidi: normal;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            vertical-align: baseline;
+            visibility: visible;
+            white-space: normal;
+            widows: 0;
+            width: auto;
+            word-spacing: normal;
+            z-index: auto
+        }
+    </style>
+    <div class="helpcrunch-iframe-wrapper"><iframe name="helpcrunch-iframe" scrolling="no"
+            style="border: 0px none; position: fixed; bottom: 0px; right: auto; left: -100%; z-index: 16777000; margin: 0px; padding: 0px; width: 0px; height: 0px; max-width: 100%; max-height: 100%;"></iframe>
+    </div>
+</body>
+
+</html>
